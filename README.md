@@ -18,21 +18,35 @@ I build maintainable test automation frameworks that help teams validate applica
 ![Maven](https://img.shields.io/badge/Build-Maven-C71A36?logo=apachemaven)
 ![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions)
 
-## 🚀 Featured Project
+## 🧪 Automation Testing Projects
 
 ### [TestForge — UI & API Automation Framework](https://github.com/Hunny-boxer/testforge-automation)
 
 [![TestForge CI](https://github.com/Hunny-boxer/testforge-automation/actions/workflows/maven.yml/badge.svg)](https://github.com/Hunny-boxer/testforge-automation/actions/workflows/maven.yml)
 
-A Java-based automation project combining Selenium WebDriver, REST Assured, TestNG, and Maven.
+A Java-based automation framework built with Selenium WebDriver, REST Assured, TestNG, and Maven.
 
-- UI tests organized around reusable page objects
-- API smoke, regression, negative, and response-time tests
-- Shared API response and security-header assertions
-- Environment-based configuration and GitHub Actions Secrets for credentials
-- ExtentReports and JaCoCo artifacts in CI
+**Selected automation tracks**
 
-**Explore the repository:** [Source code, setup guide, architecture, and CI workflow](https://github.com/Hunny-boxer/testforge-automation)
+- **UI automation:** Selenium tests organized using reusable Page Object Model components.
+- **API regression:** REST Assured tests covering representative GET/POST/PUT requests and response validation.
+- **Negative & validation testing:** Malformed JSON, missing required fields, unsupported media types, invalid values, and missing bearer-token scenarios.
+- **Security regression checks:** Reusable assertions for response content types and selected security headers, alongside sanitized diagnostic logging.
+- **Performance checks:** Response-time assertions for representative API GET operations.
+- **CI and reporting:** Six GitHub Actions jobs across full, UI smoke, UI regression, API smoke, API regression, and API performance suites, with ExtentReports and JaCoCo artifacts where configured.
+
+**Verified CI snapshot** — [Run #180](https://github.com/Hunny-boxer/testforge-automation/actions/runs/38234382760) on October 12, 2026:
+
+| Metric | Result |
+|---|---:|
+| Full-suite tests passed | 48 |
+| API regression tests passed | 32 |
+| CI jobs successful | 6 of 6 |
+| Failures / skipped tests in those reported suites | 0 / 0 |
+
+*These figures describe one verified run, not a permanent test-count guarantee. Test totals may change as the framework evolves.*
+
+**Explore the repository:** [Source code, architecture, setup guide, and workflow](https://github.com/Hunny-boxer/testforge-automation)
 
 ## 🎯 What I Care About
 
